@@ -40,7 +40,7 @@ $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['url']       = array
 	),
 	'wizard'    => array
 	(
-		array('Avisota\Contao\DataContainer\MessageContent', 'pagePicker')
+		array('Avisota\Contao\Core\DataContainer\MessageContent', 'pagePicker')
 	),
 );
 $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['linkTitle'] = array
