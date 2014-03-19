@@ -23,9 +23,9 @@ use Contao\Doctrine\ORM\EntityAccessor;
 use Contao\Doctrine\ORM\EntityHelper;
 use ContaoCommunityAlliance\Contao\Bindings\ContaoEvents;
 use ContaoCommunityAlliance\Contao\Bindings\Events\Image\GenerateHtmlEvent;
-use DcGeneral\Contao\View\Contao2BackendView\Event\GetGroupHeaderEvent;
-use DcGeneral\Contao\View\Contao2BackendView\Event\ParentViewChildRecordEvent;
-use DcGeneral\DC_General;
+use ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetGroupHeaderEvent;
+use ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ParentViewChildRecordEvent;
+use ContaoCommunityAlliance\DcGeneral\DC_General;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
