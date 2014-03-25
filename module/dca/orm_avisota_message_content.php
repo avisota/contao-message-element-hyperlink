@@ -38,10 +38,6 @@ $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['url']       = array
 		'maxlength'      => 255,
 		'tl_class'       => 'w50 wizard'
 	),
-	'wizard'    => array
-	(
-		array('Avisota\Contao\Message\Element\Hyperlink\DataContainer', 'pagePicker')
-	),
 );
 $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['linkTitle'] = array
 (
