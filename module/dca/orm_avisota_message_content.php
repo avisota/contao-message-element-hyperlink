@@ -20,7 +20,7 @@
  */
 $GLOBALS['TL_DCA']['orm_avisota_message_content']['metapalettes']['hyperlink'] = array
 (
-	'type'      => array('type', 'cell', 'headline'),
+	'type'      => array('cell', 'type', 'headline'),
 	'link'      => array('url', 'linkTitle', 'embed'),
 	'expert'    => array(':hide', 'cssID', 'space'),
 	'published' => array('invisible'),
