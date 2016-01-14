@@ -15,11 +15,10 @@
 
 namespace Avisota\Contao\Message\Element\Hyperlink;
 
-use Avisota\Contao\Core\Message\Renderer\MessagePreRendererInterface;
 use ContaoCommunityAlliance\Contao\Bindings\ContaoEvents;
 use ContaoCommunityAlliance\Contao\Bindings\Events\Image\GenerateHtmlEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+
 
 /**
  * Class DataContainer
