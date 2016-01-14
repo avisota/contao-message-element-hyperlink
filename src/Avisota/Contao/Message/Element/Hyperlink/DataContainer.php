@@ -37,7 +37,7 @@ class DataContainer
      */
     public function pagePicker($dc)
     {
-        $fieldId = 'ctrl_' . $dc->field . ((\Input::getInstance()->get('act') == 'editAll') ? '_' . $dc->id : '');
+        $fieldId = 'ctrl_' . $dc->field . ((\Input::get('act') == 'editAll') ? '_' . $dc->id : '');
 
         $generateImageHtmlEvent = new GenerateHtmlEvent(
             'pickpage.gif',
