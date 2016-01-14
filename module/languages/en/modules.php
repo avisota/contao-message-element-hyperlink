@@ -13,11 +13,10 @@
  * @filesource
  */
 
-
 /**
  * Module
  */
 $GLOBALS['TL_LANG']['MOD']['avisota-message-element-hyperlink'] = array(
-	'Avisota - Message element "Hyperlink"',
-	'"Hyperlink" message element for Avisota messages.'
+    'Avisota - Message element "Hyperlink"',
+    '"Hyperlink" message element for Avisota messages.'
 );

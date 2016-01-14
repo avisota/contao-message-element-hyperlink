@@ -13,7 +13,6 @@
  * @filesource
  */
 
-
 namespace Avisota\Contao\Message\Element\Hyperlink;
 
 use Avisota\Contao\Core\Message\Renderer;
@@ -35,40 +34,40 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  */
 class DefaultRenderer implements EventSubscriberInterface
 {
-	/**
-	 * {@inheritdoc}
-	 */
-	static public function getSubscribedEvents()
-	{
-		return array(
-			AvisotaMessageEvents::RENDER_MESSAGE_CONTENT => 'renderContent',
-		);
-	}
+    /**
+     * {@inheritdoc}
+     */
+    static public function getSubscribedEvents()
+    {
+        return array(
+            AvisotaMessageEvents::RENDER_MESSAGE_CONTENT => 'renderContent',
+        );
+    }
 
-	/**
-	 * Render a single message content element.
-	 *
-	 * @param MessageContent     $content
-	 * @param RecipientInterface $recipient
-	 *
-	 * @return string
-	 */
-	public function renderContent(RenderMessageContentEvent $event)
-	{
-		$content = $event->getMessageContent();
+    /**
+     * Render a single message content element.
+     *
+     * @param MessageContent     $content
+     * @param RecipientInterface $recipient
+     *
+     * @return string
+     */
+    public function renderContent(RenderMessageContentEvent $event)
+    {
+        $content = $event->getMessageContent();
 
-		if ($content->getType() != 'hyperlink' || $event->getRenderedContent()) {
-			return;
-		}
+        if ($content->getType() != 'hyperlink' || $event->getRenderedContent()) {
+            return;
+        }
 
-		/** @var EntityAccessor $entityAccessor */
-		$entityAccessor = $GLOBALS['container']['doctrine.orm.entityAccessor'];
+        /** @var EntityAccessor $entityAccessor */
+        $entityAccessor = $GLOBALS['container']['doctrine.orm.entityAccessor'];
 
-		$context = $entityAccessor->getProperties($content);
+        $context = $entityAccessor->getProperties($content);
 
-		$template = new \TwigTemplate('avisota/message/renderer/default/mce_hyperlink', 'html');
-		$buffer   = $template->parse($context);
+        $template = new \TwigTemplate('avisota/message/renderer/default/mce_hyperlink', 'html');
+        $buffer   = $template->parse($context);
 
-		$event->setRenderedContent($buffer);
-	}
+        $event->setRenderedContent($buffer);
+    }
 }

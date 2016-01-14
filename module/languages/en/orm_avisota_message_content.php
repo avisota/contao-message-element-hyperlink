@@ -13,19 +13,17 @@
  * @filesource
  */
 
-
 /**
  * Fields
  */
 $GLOBALS['TL_LANG']['orm_avisota_message_content']['linkTitle'] = array(
-	'Link title',
-	'The link title will be displayed instead of the target URL.'
+    'Link title',
+    'The link title will be displayed instead of the target URL.'
 );
 $GLOBALS['TL_LANG']['orm_avisota_message_content']['embed']     = array(
-	'Embed the link',
-	'Use the wildcard "%s" to embed the link in a phrase (e.g. <em>For more information please visit %s</em>).'
+    'Embed the link',
+    'Use the wildcard "%s" to embed the link in a phrase (e.g. <em>For more information please visit %s</em>).'
 );
-
 
 /**
  * Legends

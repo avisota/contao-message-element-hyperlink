@@ -23,27 +23,27 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class DataContainer
 {
-	/**
-	 * Return the link picker wizard
-	 *
-	 * @param object
-	 *
-	 * @return string
-	 */
-	public function pagePicker($dc)
-	{
-		$fieldId = 'ctrl_' . $dc->field . ((\Input::getInstance()->get('act') == 'editAll') ? '_' . $dc->id : '');
+    /**
+     * Return the link picker wizard
+     *
+     * @param object
+     *
+     * @return string
+     */
+    public function pagePicker($dc)
+    {
+        $fieldId = 'ctrl_' . $dc->field . ((\Input::getInstance()->get('act') == 'editAll') ? '_' . $dc->id : '');
 
-		$generateImageHtmlEvent = new GenerateHtmlEvent(
-			'pickpage.gif',
-			$GLOBALS['TL_LANG']['MSC']['pagepicker'],
-			'style="vertical-align:top; cursor:pointer;" onclick="Backend.pickPage(\'' . $fieldId . '\')"'
-		);
+        $generateImageHtmlEvent = new GenerateHtmlEvent(
+            'pickpage.gif',
+            $GLOBALS['TL_LANG']['MSC']['pagepicker'],
+            'style="vertical-align:top; cursor:pointer;" onclick="Backend.pickPage(\'' . $fieldId . '\')"'
+        );
 
-		/** @var EventDispatcher $eventDispatcher */
-		$eventDispatcher = $GLOBALS['container']['event-dispatcher'];
-		$eventDispatcher->dispatch(ContaoEvents::IMAGE_GET_HTML, $generateImageHtmlEvent);
+        /** @var EventDispatcher $eventDispatcher */
+        $eventDispatcher = $GLOBALS['container']['event-dispatcher'];
+        $eventDispatcher->dispatch(ContaoEvents::IMAGE_GET_HTML, $generateImageHtmlEvent);
 
-		return ' ' . $generateImageHtmlEvent->getHtml();
-	}
+        return ' ' . $generateImageHtmlEvent->getHtml();
+    }
 }
