@@ -21,6 +21,11 @@ use ContaoCommunityAlliance\Contao\Bindings\Events\Image\GenerateHtmlEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
+/**
+ * Class DataContainer
+ *
+ * @package Avisota\Contao\Message\Element\Hyperlink
+ */
 class DataContainer
 {
     /**
