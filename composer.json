@@ -49,12 +49,12 @@
     "extra": {
         "contao": {
             "sources": {
-                "module": "system/modules/avisota-message-element-hyperlink"
+                "contao": "system/modules/avisota-message-element-hyperlink"
             },
             "transifex": {
                 "project": "avisota-contao",
                 "prefix": "contao-message-element-hyperlink-",
-                "languages_cto": "module/languages",
+                "languages_cto": "contao/languages",
                 "languages_tx": ".tx"
             }
         },
