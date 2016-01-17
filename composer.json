@@ -43,7 +43,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Avisota\\Contao\\Message\\Element\\Hyperlink": "src/"
+            "Avisota\\Contao\\Message\\Element\\Hyperlink\\": "src/"
         }
     },
     "extra": {
