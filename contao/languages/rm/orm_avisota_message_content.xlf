@@ -1,0 +1,31 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="php" date="2014-05-06T04:04:05+02:00" original="orm_avisota_message_content" source-language="en" target-language="rm">
+    <body>
+      <trans-unit id="orm_avisota_message_content.linkTitle.0">
+        <source>Link title</source>
+        <target>Titel da la colliaziun</target>
+        
+      </trans-unit>
+      <trans-unit id="orm_avisota_message_content.linkTitle.1">
+        <source>The link title will be displayed instead of the target URL.</source>
+        <target>Il titel da la colliaziun vegn mussà empè da l'URL da destinaziun.</target>
+        
+      </trans-unit>
+      <trans-unit id="orm_avisota_message_content.embed.0">
+        <source>Embed the link</source>
+        <target>Includer la colliaziun</target>
+        
+      </trans-unit>
+      <trans-unit id="orm_avisota_message_content.embed.1">
+        <source>Use the wildcard &quot;%s&quot; to embed the link in a phrase (e.g. &lt;em&gt;For more information please visit %s&lt;/em&gt;).</source>
+        <target>Utilisescha la wildcard &quot;%s&quot; per includer la collaziun en ina construcziun (p.ex. &lt;em&gt;Per ulteriuras infurmaziuns pos ti visitar %s&lt;/em&gt;). </target>
+        
+      </trans-unit>
+      <trans-unit id="orm_avisota_message_content.link_legend">
+        <source>Hyperlink settings</source>
+        <target>Configuraziun da la colliaziun</target>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="php" date="2014-05-06T04:04:05+02:00" original="default" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MCE.hyperlink.0">
+        <source>Hyperlink</source>
+        <target>Hyperlink</target>
+        
+      </trans-unit>
+      <trans-unit id="MCE.hyperlink.1">
+        <source>Generates a link to another website.</source>
+        <target>Erzeugt einen Link zu einer anderen Webseite.</target>
+        
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
