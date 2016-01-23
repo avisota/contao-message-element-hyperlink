@@ -32,6 +32,9 @@ class DataContainer
      * @param object
      *
      * @return string
+     * @SuppressWarnings(PHPMD.Superglobals)
+     * @SuppressWarnings(PHPMD.ShortVariable)
+     * @SuppressWarnings(PHPMD.LongVariable)
      */
     public function pagePicker($dc)
     {

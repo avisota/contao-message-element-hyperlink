@@ -64,6 +64,7 @@ class DefaultRenderer implements EventSubscriberInterface
      * @return string
      * @internal param MessageContent $content
      * @internal param RecipientInterface $recipient
+     * @SuppressWarnings(PHPMD.Superglobals)
      *
      */
     public function renderContent(RenderMessageContentEvent $event)
