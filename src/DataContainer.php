@@ -19,7 +19,6 @@ use ContaoCommunityAlliance\Contao\Bindings\ContaoEvents;
 use ContaoCommunityAlliance\Contao\Bindings\Events\Image\GenerateHtmlEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-
 /**
  * Class DataContainer
  *

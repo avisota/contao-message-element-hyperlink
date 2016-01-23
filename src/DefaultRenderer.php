@@ -16,14 +16,11 @@
 namespace Avisota\Contao\Message\Element\Hyperlink;
 
 use Avisota\Contao\Core\Message\Renderer;
-
 use Avisota\Contao\Message\Core\Event\AvisotaMessageEvents;
 use Avisota\Contao\Message\Core\Event\RenderMessageContentEvent;
-
 use Contao\Doctrine\ORM\Entity;
 use Contao\Doctrine\ORM\EntityAccessor;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-
 
 /**
  * Class DefaultRenderer
@@ -52,7 +49,7 @@ class DefaultRenderer implements EventSubscriberInterface
      *
      * @return array The event names to listen to
      */
-    static public function getSubscribedEvents()
+    public static function getSubscribedEvents()
     {
         return array(
             AvisotaMessageEvents::RENDER_MESSAGE_CONTENT => 'renderContent',
