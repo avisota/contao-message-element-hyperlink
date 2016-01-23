@@ -19,7 +19,6 @@ use ContaoCommunityAlliance\Contao\Bindings\ContaoEvents;
 use ContaoCommunityAlliance\Contao\Bindings\Events\Image\GenerateHtmlEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-
 /**
  * Class DataContainer
  *
@@ -33,6 +32,9 @@ class DataContainer
      * @param object
      *
      * @return string
+     * @SuppressWarnings(PHPMD.Superglobals)
+     * @SuppressWarnings(PHPMD.ShortVariable)
+     * @SuppressWarnings(PHPMD.LongVariable)
      */
     public function pagePicker($dc)
     {

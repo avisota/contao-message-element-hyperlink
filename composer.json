@@ -44,6 +44,11 @@
             "Avisota\\Contao\\Message\\Element\\Hyperlink\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Avisota\\Test\\Contao\\Message\\Element\\Hyperlink\\": "tests/Test"
+        }
+    },
     "extra": {
         "contao": {
             "sources": {
