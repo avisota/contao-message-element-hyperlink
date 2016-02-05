@@ -13,7 +13,6 @@
  * @filesource
  */
 
-
 /**
  * Table orm_avisota_message_content
  * Entity Avisota\Contao:MessageContent
@@ -26,7 +25,7 @@ $GLOBALS['TL_DCA']['orm_avisota_message_content']['metapalettes']['hyperlink'] =
     'published' => array('invisible'),
 );
 
-$GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['url']       = array
+$GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['url'] = array
 (
     'label'     => &$GLOBALS['TL_LANG']['MSC']['url'],
     'exclude'   => true,
@@ -40,6 +39,7 @@ $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['url']       = array
         'tl_class'       => 'w50 wizard'
     ),
 );
+
 $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['linkTitle'] = array
 (
     'label'     => &$GLOBALS['TL_LANG']['orm_avisota_message_content']['linkTitle'],
@@ -48,7 +48,8 @@ $GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['linkTitle'] = array
     'inputType' => 'text',
     'eval'      => array('maxlength' => 255, 'tl_class' => 'w50'),
 );
-$GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['embed']     = array
+
+$GLOBALS['TL_DCA']['orm_avisota_message_content']['fields']['embed'] = array
 (
     'label'     => &$GLOBALS['TL_LANG']['orm_avisota_message_content']['embed'],
     'exclude'   => true,
