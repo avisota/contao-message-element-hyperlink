@@ -35,9 +35,12 @@ class DataContainer
      * @SuppressWarnings(PHPMD.Superglobals)
      * @SuppressWarnings(PHPMD.ShortVariable)
      * @SuppressWarnings(PHPMD.LongVariable)
+     * Todo make this used
      */
     public function pagePicker($dc)
     {
+        global $container;
+
         $fieldId = 'ctrl_' . $dc->field . ((\Input::get('act') == 'editAll') ? '_' . $dc->id : '');
 
         $generateImageHtmlEvent = new GenerateHtmlEvent(
@@ -47,7 +50,7 @@ class DataContainer
         );
 
         /** @var EventDispatcher $eventDispatcher */
-        $eventDispatcher = $GLOBALS['container']['event-dispatcher'];
+        $eventDispatcher = $container['event-dispatcher'];
         $eventDispatcher->dispatch(ContaoEvents::IMAGE_GET_HTML, $generateImageHtmlEvent);
 
         return ' ' . $generateImageHtmlEvent->getHtml();

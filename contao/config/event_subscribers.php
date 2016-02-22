@@ -13,7 +13,8 @@
  * @filesource
  */
 
-/**
- * Message elements
- */
-$GLOBALS['TL_MCE']['texts'][] = 'hyperlink';
+use Avisota\Contao\Message\Element\Hyperlink\DefaultRenderer;
+
+return array(
+    new DefaultRenderer()
+);
