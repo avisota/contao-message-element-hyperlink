@@ -13,8 +13,10 @@
  * @filesource
  */
 
+use Avisota\Contao\Message\Element\Hyperlink\DataContainer\MessageContent;
 use Avisota\Contao\Message\Element\Hyperlink\DefaultRenderer;
 
 return array(
-    new DefaultRenderer()
+    new DefaultRenderer(),
+    new MessageContent()
 );
