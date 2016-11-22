@@ -59,6 +59,8 @@ class MessageContent implements EventSubscriberInterface
      * @param ManipulateWidgetEvent $event The event.
      *
      * @return void
+     *
+     * @SuppressWarnings(PHPMD.LongVariable)
      */
     public function modalPagePickerForPropertyUrl(ManipulateWidgetEvent $event)
     {
